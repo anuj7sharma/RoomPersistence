@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19a05f</color>
+    <color name="colorPrimaryDark">#0e7342</color>
+    <color name="colorAccent">#1C8CE2</color>
+
+    <color name="icon_gray">#999999</color>
+    <color name="icon_blue">#1C8CE2</color>
+
+    <color name="windowBackground">#e9e6e6</color>
+    <color name="splash_bg">#3f99ce</color>
+    <color name="app_textcolor_heading">#444444</color>
+    <color name="app_textcolor">#211f20</color>
+    <color name="app_hintcolor">#3e3e3e</color>
+
+    <color name="transparent">#00fafafa</color>
+    <color name="light_transpirant_black">#99000000</color>
+    <color name="transpirant_red">#79d73f3f</color>
+
+    <color name="colorAppBlue">#1C8CE2</color>
+    <color name="colorAppRed">#fe3b49</color>
+    <color name="colorAppYellow">#f0cf36</color>
+    <color name="colorCategoryBG">#324A60</color>
+    <color name="colorTaskBg">#fb545f</color>
+
+    <color name="labelColorGray">#818181</color>
+    <color name="colorSeaGreen">#5dcac4</color>
+    <color name="btn_title">#52c7bf</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#f2f2f2</color>
+    <color name="dark_gray">#a1a8a0</color>
+    <color name="message_gray">#7e817d</color>
+    <color name="red">#fe3b49</color>
+    <color name="green">#24cf5f</color>
+    <color name="green_light">#58e689</color>
+    <color name="sky_blue">#b5e7fe</color>
+
+</resources>

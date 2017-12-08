@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Room</string>
+    <string name="search">Search</string>
+    <string name="transition_search">transition_search</string>
+    <string name="transition_image">transition_image</string>
+    <string name="home">Home</string>
+    <string name="no_favourites_yet">No Favourites yet</string>
+</resources>

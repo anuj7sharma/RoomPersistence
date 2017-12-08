@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="imageModel"
+            type="com.room.db.table.Favourite" />
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_4"
+        app:cardElevation="@dimen/margin_4"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:src="@mipmap/ic_launcher"
+            app:roundedCornerRadius="@dimen/margin_4" />
+        <!--app:imageUrl="@{glide.load(imageModel.media).into(this)}"-->
+    </android.support.v7.widget.CardView>
+</layout>

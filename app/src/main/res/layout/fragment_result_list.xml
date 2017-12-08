@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isProgress"
+            type="boolean" />
+        <!--<variable
+            name="adapter"
+            type="com.mediasearch.adapter.SearchListAdapter"/>-->
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="5dp"
+                android:paddingRight="@dimen/margin_4"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/address_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:queryBackground="@color/transparent"
+                    android:background="@color/light_gray"
+                    android:textColor="@color/app_textcolor"
+                    app:defaultQueryHint="Search"
+                    android:textSize="@dimen/text_size"
+                    app:queryHint="Search"
+                    android:foregroundTint="@color/dark_gray"
+                    app:closeIcon="@drawable/ic_clear"
+                    app:iconifiedByDefault="false"
+                    android:imeActionLabel="@string/search"
+                    android:searchIcon="@android:drawable/ic_menu_search"
+                    android:transitionName="@string/transition_search"
+                    android:visibility="gone"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.room.utility.ListShimmerView
+                android:id="@+id/shimmerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{isProgress? View.VISIBLE : View.GONE}"/>
+        </RelativeLayout>
+
+        <!--android:visibility="@{isProgress? View.VISIBLE : View.GONE}"-->
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
